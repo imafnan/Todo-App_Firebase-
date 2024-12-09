@@ -70,6 +70,7 @@ const TodoOne = () => {
     else{
       alert('Please enter a task to update!');
       return;
+
     }
     update(ref(db, 'allTodo/' + editData.id), { 
         SingleTodo: editData.SingleTodo 
@@ -111,7 +112,6 @@ const TodoOne = () => {
         <div className='Divider flex justify-center'>
         <div className=" flex grid-cols-[1fr_max-content_1fr] grid-rows-[27px_0] gap-[11px] items-center text-center">
             <span className="block w-[150px] h-[1px] bg-[#f8f8f8] border-b-[2px] ml-auto"></span>
-            <h1 className="text-[30px] font-light text-[#fff] uppercase tracking-[1px] font-FontOne"></h1>
             <h1 className="text-[30px]  text-[#fff] mx-5"><PiNotePencilBold/></h1>
             <span className="block w-[150px] h-[1px] bg-[#f8f8f8] border-b-[2px]"></span>
           </div>
